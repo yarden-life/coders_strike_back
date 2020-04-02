@@ -15,7 +15,7 @@ class Location:
         return self.x, self.y
 
 
-def get_distance(source_location: Location, dest_location: Location):
+def calculate_distance(source_location: Location, dest_location: Location):
     point1 = source_location.coordinate
     point2 = dest_location.coordinate
     return math.sqrt(sum([(a - b) ** 2 for a, b in zip(point1, point2)]))
